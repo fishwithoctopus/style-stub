@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Stub 小红书介绍图</title>
+  <style>
+    :root { --ink:#241f19; --paper:#f3ead9; --cream:#fff9ed; --red:#aa4b3c; --muted:#786f62; }
+    * { box-sizing:border-box; }
+    html,body { width:1080px; height:1440px; margin:0; overflow:hidden; }
+    body { color:var(--ink); background:#171511; font-family:"Microsoft YaHei UI","PingFang SC",sans-serif; }
+    .slide { position:relative; width:1080px; height:1440px; padding:78px 74px 68px; overflow:hidden; background:radial-gradient(circle at 16% 8%,#4c4032 0 2px,transparent 3px),radial-gradient(circle at 84% 30%,#4c4032 0 2px,transparent 3px),#171511; background-size:52px 52px,68px 68px; }
+    .paper { position:relative; height:100%; padding:68px 64px 52px; background:linear-gradient(90deg,rgba(64,49,35,.035) 1px,transparent 1px),linear-gradient(rgba(64,49,35,.03) 1px,transparent 1px),var(--paper); background-size:5px 5px; border-radius:3px; box-shadow:0 26px 60px #0009; }
+    .paper::before,.paper::after { content:""; position:absolute; left:0; right:0; height:14px; background:linear-gradient(135deg,transparent 50%,var(--paper) 51%) 0 0/24px 14px repeat-x,linear-gradient(225deg,transparent 50%,var(--paper) 51%) 12px 0/24px 14px repeat-x; }
+    .paper::before { top:-13px; transform:rotate(180deg); }
+    .paper::after { bottom:-13px; }
+    .mast { display:flex; align-items:center; justify-content:space-between; padding-bottom:28px; border-bottom:2px solid var(--ink); }
+    .brand { display:flex; align-items:center; gap:20px; }
+    .seal { width:78px; height:78px; display:grid; place-items:center; border:3px double var(--ink); border-radius:50%; font:700 27px Georgia,serif; }
+    .brand b { display:block; font:800 35px Georgia,"Songti SC",serif; letter-spacing:.04em; }
+    .brand small,.issue { font:700 15px/1.4 monospace; letter-spacing:.16em; color:var(--muted); }
+    .kicker { margin:44px 0 12px; font:700 18px monospace; letter-spacing:.13em; color:var(--red); }
+    h1 { margin:0; max-width:870px; font:900 74px/1.08 Georgia,"Songti SC",serif; letter-spacing:-.02em; }
+    h2 { margin:0; font:900 56px/1.12 Georgia,"Songti SC",serif; }
+    .lead { margin:24px 0 0; max-width:820px; font-size:25px; line-height:1.65; color:#554d43; }
+    .shot-zone { position:absolute; left:66px; right:66px; bottom:42px; height:780px; display:flex; align-items:flex-end; justify-content:center; overflow:hidden; }
+    .shot { width:364px; border-radius:12px; filter:drop-shadow(22px 30px 20px #0005); }
+    .shot.large { width:455px; }
+    .shot.left { transform:rotate(-4deg) translateY(70px); }
+    .shot.right { transform:rotate(5deg) translateY(18px); }
+    .label { position:absolute; padding:16px 20px; border:2px solid var(--ink); background:var(--cream); box-shadow:7px 8px 0 #aa4b3c; font:700 20px/1.35 monospace; }
+    .label.one { left:56px; top:142px; transform:rotate(-3deg); }
+    .label.two { right:42px; top:318px; transform:rotate(3deg); }
+    .feature-grid { margin-top:48px; display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .feature { min-height:132px; padding:22px; border:2px solid var(--ink); background:#fff8e9; }
+    .feature b { display:block; margin-bottom:10px; font-size:23px; }
+    .feature span { font-size:18px; line-height:1.5; color:#645b50; }
+    .split-shots { position:absolute; left:64px; right:64px; bottom:38px; height:735px; display:flex; gap:28px; align-items:flex-end; justify-content:center; overflow:hidden; }
+    .split-shots .shot { width:390px; }
+    .privacy { margin-top:50px; display:grid; gap:18px; }
+    .privacy div { display:grid; grid-template-columns:70px 1fr; gap:18px; align-items:center; padding:22px 24px; border-top:1px dashed var(--ink); }
+    .privacy b { font:800 23px Georgia,"Songti SC",serif; }
+    .privacy span { font-size:18px; line-height:1.5; color:#62594e; }
+    .num { width:58px; height:58px; display:grid; place-items:center; border:2px solid var(--ink); border-radius:50%; font:700 21px monospace; color:var(--red); }
+    .open { position:absolute; left:64px; right:64px; bottom:62px; padding:30px; border:3px solid var(--ink); text-align:center; background:var(--ink); color:var(--paper); font:800 25px/1.5 monospace; box-shadow:9px 10px 0 var(--red); }
+  </style>
+</head>
+<body>
+  <section class="slide" data-slide="1"><div class="paper">
+    <div class="mast"><div class="brand"><span class="seal">SS</span><span><b>风格票根</b><small>STYLE STUB ARCHIVE</small></span></div><span class="issue">ISSUE 001</span></div>
+    <p class="kicker">A DESKTOP VISUAL DICTIONARY</p><h1>把审美，装进一张可以查阅和组合的票根</h1><p class="lead">35 种视觉风格 · 完整 UI Prompt · 风格实验室 · 个人风格提取</p>
+    <div class="shot-zone"><span class="label one">桌面侧边常驻</span><img class="shot large" src="../../docs/assets/catalog.png"><span class="label two">Windows / 本地优先</span></div>
+  </div></section>
+  <section class="slide" data-slide="2"><div class="paper">
+    <div class="mast"><div class="brand"><span class="seal">01</span><span><b>不是只看一个风格名</b><small>CATALOG / 图鉴</small></span></div><span class="issue">35 TICKETS</span></div>
+    <p class="kicker">LOOK UP · OPEN · COPY</p><h2>每张票根都有例图、机制和可直接使用的 Prompt</h2>
+    <div class="feature-grid"><div class="feature"><b>模糊搜索</b><span>中文、英文、别名与视觉关键词都能找</span></div><div class="feature"><b>原创 CSS 小样</b><span>不是一堆抽象形容词，而是可以看见的规则</span></div></div>
+    <div class="split-shots"><img class="shot left" src="../../docs/assets/catalog.png"><img class="shot right" src="../../docs/assets/detail.png"></div>
+  </div></section>
+  <section class="slide" data-slide="3"><div class="paper">
+    <div class="mast"><div class="brand"><span class="seal">02</span><span><b>把风格拆成配料</b><small>STYLE LAB / 实验室</small></span></div><span class="issue">2—4 STYLES</span></div>
+    <p class="kicker">MIX WITHOUT LOSING HIERARCHY</p><h2>自由拉份量，后台再换算成真正的百分比</h2><p class="lead">指定主风格、局部材质、情绪和禁用项，自动组合成中英文配方。</p>
+    <div class="shot-zone"><span class="label one">编辑式网页 50%</span><img class="shot large" src="../../docs/assets/lab.png"><span class="label two">液态玻璃 32%<br>纸张质感 18%</span></div>
+  </div></section>
+  <section class="slide" data-slide="4"><div class="paper">
+    <div class="mast"><div class="brand"><span class="seal">03</span><span><b>慢慢长出自己的风格</b><small>PERSONAL ARCHIVE / 私人馆藏</small></span></div><span class="issue">LOCAL ONLY</span></div>
+    <p class="kicker">1—4 IMAGES → TRANSFERABLE RULES</p><h2>AI 提取视觉 DNA，不照搬原页面内容</h2><p class="lead">千问先看图提取证据，再用一次不含图片的文本复审，主动排除产品名、Tab、专属图标和信息架构。</p>
+    <div class="split-shots"><img class="shot left" src="../../docs/assets/mine.png"><img class="shot right" src="../../docs/assets/personal-style.png"></div>
+  </div></section>
+  <section class="slide" data-slide="5"><div class="paper">
+    <div class="mast"><div class="brand"><span class="seal">04</span><span><b>它真的是桌面小工具</b><small>WINDOWS DESKTOP / 本地优先</small></span></div><span class="issue">MIT OPEN SOURCE</span></div>
+    <p class="kicker">SMALL WINDOW · QUIET PRESENCE</p><h2>置顶、贴边、记住位置，也能藏进托盘</h2>
+    <div class="privacy"><div><i class="num">01</i><span><b>你的 Key 不进 GitHub</b><br>桌面版由 Windows 用户级加密保存</span></div><div><i class="num">02</i><span><b>私人馆藏只留在本机</b><br>原始例图不持久化，只保存压缩封面</span></div><div><i class="num">03</i><span><b>没有 AI 也能用</b><br>图鉴、搜索、Lab 和手动 Prompt 全部保留</span></div><div><i class="num">04</i><span><b>MIT 开源</b><br>可以使用、修改、二次开发，也欢迎补票根</span></div></div>
+    <div class="open">STYLE STUB / 风格票根<br>Windows 便携版 · GitHub 即将公开</div>
+  </div></section>
+  <script>const n=new URLSearchParams(location.search).get('slide')||'1';document.querySelectorAll('.slide').forEach(el=>el.style.display=el.dataset.slide===n?'block':'none');</script>
+</body>
+</html>

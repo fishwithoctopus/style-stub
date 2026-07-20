@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171511">
+  <title>风格票根 Style Stub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="desktop-stage">
+    <section class="widget" aria-label="风格票根应用">
+      <div class="paper-grain" aria-hidden="true"></div>
+      <header class="app-header">
+        <button class="brand" id="brandButton" aria-label="回到图鉴首页">
+          <span class="brand-mark">SS</span>
+          <span><b>风格票根</b><small>STYLE STUB ARCHIVE</small></span>
+        </button>
+        <div class="header-actions">
+          <div class="desktop-window-controls" aria-label="窗口控制">
+            <button id="desktopMinimize" type="button" aria-label="最小化">−</button>
+            <button id="desktopClose" type="button" aria-label="隐藏到系统托盘">×</button>
+          </div>
+          <button class="round-button" id="settingsShortcut" aria-label="打开设置">
+            <span class="settings-glyph" aria-hidden="true">⚙</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="search-wrap" id="searchWrap">
+        <label for="searchInput">LOOK UP / 查找</label>
+        <div class="search-field">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="风格、组件或关键词" autocomplete="off">
+          <button id="clearSearch" aria-label="清除搜索">×</button>
+        </div>
+      </div>
+
+      <section id="view" class="view" aria-live="polite"></section>
+
+      <nav class="tab-bar" aria-label="主导航">
+        <button data-route="catalog" class="active"><span>⌂</span>图鉴</button>
+        <button data-route="lab"><span>⌘</span>LAB <i id="navLabCount">0</i></button>
+        <button data-route="mine"><span>✦</span>我的</button>
+      </nav>
+      <div id="toast" class="toast" role="status"></div>
+    </section>
+  </main>
+  <script src="data/styles.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

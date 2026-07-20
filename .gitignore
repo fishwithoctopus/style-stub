@@ -1,0 +1,25 @@
+# User and local runtime data
+*.local.json
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.codex/
+.agents/
+AGENTS.md
+sources/
+*.log
+
+# Build and test outputs
+dist/
+node_modules/
+coverage/
+
+# Local previews and captures
+artifacts/
+screenshots/

@@ -1,0 +1,43 @@
+name: Style entry proposal
+description: 提议新增或修订视觉风格词条
+title: "[Entry] "
+labels: ["content"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 词条名称
+      placeholder: 中文名 / English name
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: 类型
+      options:
+        - 风格体系
+        - 材质与技法
+        - 布局系统
+        - 组件
+        - 时代与平台
+        - 当代产品案例
+    validations:
+      required: true
+  - type: textarea
+    id: definition
+    attributes:
+      label: 简明定义与视觉机制
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 参考依据
+      description: 请提供可信来源与快照日期；不要直接上传没有许可的图片。
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: 建议提示词
+      description: 尽量写成可执行、可迁移的视觉约束，不照搬来源产品内容。
