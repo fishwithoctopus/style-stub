@@ -97,15 +97,26 @@ async function captureAppScreens(port) {
 
 async function captureXhsCards(port) {
   fs.mkdirSync(XHS_ASSETS, { recursive: true });
-  const win = new BrowserWindow({ width: 1080, height: 1440, show: false, backgroundColor: '#171511' });
+  const win = new BrowserWindow({
+    width: 1080,
+    height: 1440,
+    useContentSize: true,
+    frame: false,
+    show: false,
+    backgroundColor: '#171511',
+    webPreferences: { offscreen: true, backgroundThrottling: false }
+  });
+  win.setContentSize(1080, 1440, false);
   const source = fs.readFileSync(path.join(XHS_ASSETS, 'cards.html'), 'utf8')
     .replaceAll('../../docs/assets/', `http://127.0.0.1:${port}/docs/assets/`);
   for (let index = 1; index <= 5; index += 1) {
     const html = source.replace("const n=new URLSearchParams(location.search).get('slide')||'1';", `const n='${index}';`);
     await win.loadURL(`data:text/html;base64,${Buffer.from(html).toString('base64')}`);
-    await new Promise(resolve => setTimeout(resolve, 160));
+    await win.webContents.executeJavaScript(`Promise.all([...document.images].map(image => image.decode().catch(() => null))).then(() => document.fonts.ready).then(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))))`);
+    await new Promise(resolve => setTimeout(resolve, 220));
     const image = await win.webContents.capturePage();
-    fs.writeFileSync(path.join(XHS_ASSETS, `0${index}.png`), image.toPNG());
+    const output = image.resize({ width: 1080, height: 1440, quality: 'best' });
+    fs.writeFileSync(path.join(XHS_ASSETS, `0${index}.png`), output.toPNG());
   }
   win.destroy();
 }

@@ -9,7 +9,7 @@
     * { box-sizing:border-box; }
     html,body { width:1080px; height:1440px; margin:0; overflow:hidden; }
     body { color:var(--ink); background:#171511; font-family:"Microsoft YaHei UI","PingFang SC",sans-serif; }
-    .slide { position:relative; width:1080px; height:1440px; padding:78px 74px 68px; overflow:hidden; background:radial-gradient(circle at 16% 8%,#4c4032 0 2px,transparent 3px),radial-gradient(circle at 84% 30%,#4c4032 0 2px,transparent 3px),#171511; background-size:52px 52px,68px 68px; }
+    .slide { position:relative; width:1080px; height:1440px; padding:34px; overflow:hidden; background:radial-gradient(circle at 16% 8%,#4c4032 0 2px,transparent 3px),radial-gradient(circle at 84% 30%,#4c4032 0 2px,transparent 3px),#171511; background-size:52px 52px,68px 68px; }
     .paper { position:relative; height:100%; padding:68px 64px 52px; background:linear-gradient(90deg,rgba(64,49,35,.035) 1px,transparent 1px),linear-gradient(rgba(64,49,35,.03) 1px,transparent 1px),var(--paper); background-size:5px 5px; border-radius:3px; box-shadow:0 26px 60px #0009; }
     .paper::before,.paper::after { content:""; position:absolute; left:0; right:0; height:14px; background:linear-gradient(135deg,transparent 50%,var(--paper) 51%) 0 0/24px 14px repeat-x,linear-gradient(225deg,transparent 50%,var(--paper) 51%) 12px 0/24px 14px repeat-x; }
     .paper::before { top:-13px; transform:rotate(180deg); }
@@ -23,11 +23,11 @@
     h1 { margin:0; max-width:870px; font:900 74px/1.08 Georgia,"Songti SC",serif; letter-spacing:-.02em; }
     h2 { margin:0; font:900 56px/1.12 Georgia,"Songti SC",serif; }
     .lead { margin:24px 0 0; max-width:820px; font-size:25px; line-height:1.65; color:#554d43; }
-    .shot-zone { position:absolute; left:66px; right:66px; bottom:42px; height:780px; display:flex; align-items:flex-end; justify-content:center; overflow:hidden; }
+    .shot-zone { position:absolute; left:66px; right:66px; bottom:32px; height:710px; display:flex; align-items:flex-start; justify-content:center; overflow:visible; }
     .shot { width:364px; border-radius:12px; filter:drop-shadow(22px 30px 20px #0005); }
-    .shot.large { width:455px; }
-    .shot.left { transform:rotate(-4deg) translateY(70px); }
-    .shot.right { transform:rotate(5deg) translateY(18px); }
+    .shot.large { width:340px; }
+    .shot.left { transform:rotate(-4deg); }
+    .shot.right { transform:rotate(5deg); }
     .label { position:absolute; padding:16px 20px; border:2px solid var(--ink); background:var(--cream); box-shadow:7px 8px 0 #aa4b3c; font:700 20px/1.35 monospace; }
     .label.one { left:56px; top:142px; transform:rotate(-3deg); }
     .label.two { right:42px; top:318px; transform:rotate(3deg); }
@@ -35,8 +35,8 @@
     .feature { min-height:132px; padding:22px; border:2px solid var(--ink); background:#fff8e9; }
     .feature b { display:block; margin-bottom:10px; font-size:23px; }
     .feature span { font-size:18px; line-height:1.5; color:#645b50; }
-    .split-shots { position:absolute; left:64px; right:64px; bottom:38px; height:735px; display:flex; gap:28px; align-items:flex-end; justify-content:center; overflow:hidden; }
-    .split-shots .shot { width:390px; }
+    .split-shots { position:absolute; left:64px; right:64px; bottom:32px; height:720px; display:flex; gap:28px; align-items:flex-start; justify-content:center; overflow:visible; }
+    .split-shots .shot { width:330px; }
     .privacy { margin-top:50px; display:grid; gap:18px; }
     .privacy div { display:grid; grid-template-columns:70px 1fr; gap:18px; align-items:center; padding:22px 24px; border-top:1px dashed var(--ink); }
     .privacy b { font:800 23px Georgia,"Songti SC",serif; }
