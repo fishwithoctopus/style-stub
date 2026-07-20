@@ -73,7 +73,7 @@ app.js              路由、搜索、Lab、个人馆藏与 AI 客户端
 data/styles.js      公共视觉风格词库
 server/gateway.js   本地静态服务与 AI 网关
 desktop/            Electron 桌面壳、托盘与窗口状态
-docs/               产品、架构、AI 与开源说明
+docs/               产品、架构、AI 与许可说明
 ```
 
 项目刻意保持原生 HTML、CSS 与 JavaScript，不依赖前端框架。桌面壳使用 Electron。
@@ -84,4 +84,10 @@ docs/               产品、架构、AI 与开源说明
 
 ## License
 
-[MIT License](LICENSE) © 2026 Style Stub contributors.
+当前 `main` 分支及后续版本采用 [PolyForm Noncommercial License 1.0.0](LICENSE)，版权所有 © 2026 `fishwithoctopus`。
+
+- 允许符合许可证条款的个人学习、研究、非商业使用、修改与再分发。
+- 商业使用、收费服务、付费客户项目或其他预期商业用途不在公共许可证授权范围内；如有需要，须另行取得版权所有者的书面许可。
+- 这是一项源码公开的非商业许可证，不是 OSI 定义下的开源许可证。
+
+许可变更不追溯：已经发布的 `v0.5.0` 标签与 Windows 便携版继续适用其发布时附带的 MIT License。

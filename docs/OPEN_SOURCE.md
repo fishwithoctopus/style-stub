@@ -1,4 +1,4 @@
-# Open-source Readiness
+# Source-available Readiness / 源码公开说明
 
 ## 发布范围
 
@@ -6,7 +6,11 @@ Style Stub 以 GitHub 公共仓库发布源代码、原创词条文本、原创 
 
 ## 许可证
 
-项目已采用 [MIT License](../LICENSE)。第三方名称、商标与平台案例不因此获得授权；它们仅用于识别和设计研究，详见 [NOTICE.md](../NOTICE.md)。未经许可的第三方参考图不随仓库分发。
+当前 `main` 分支及后续版本采用 [PolyForm Noncommercial License 1.0.0](../LICENSE)。该许可证允许符合条款的非商业使用、修改与再分发，但不授权商业使用。商业用途必须另行取得版权所有者的书面许可。
+
+因此本项目应描述为“源码公开、限非商业使用”，而不是 OSI 定义下的开源软件。已经发布的 `v0.5.0` 标签与 Windows 便携版仍保留其发布时的 MIT License，许可变更不追溯。
+
+第三方名称、商标与平台案例不因此获得授权；它们仅用于识别和设计研究，详见 [NOTICE.md](../NOTICE.md)。未经许可的第三方参考图不随仓库分发。
 
 ## 首发检查清单
 
@@ -15,15 +19,15 @@ Style Stub 以 GitHub 公共仓库发布源代码、原创词条文本、原创 
 - [x] SECURITY 安全说明
 - [x] Issue 与 Pull Request 模板
 - [x] 忽略本地数据、密钥和构建产物
-- [x] MIT License 与 npm 许可元数据
+- [x] PolyForm Noncommercial 1.0.0 与 npm 许可元数据
 - [x] Windows 免安装构建
 - [x] 成品截图
 - [x] 项目名：Style Stub / 风格票根
 - [x] 推荐仓库名：`style-stub`
 - [x] 词条来源与事实核查规则
 - [x] 私人路径与常见 Key 形态扫描
-- [ ] 确认 GitHub 账号与最终仓库名
-- [ ] 创建公共仓库并发布 `v0.5.0`
+- [x] 确认 GitHub 账号与最终仓库名
+- [x] 创建公共仓库并发布 `v0.5.0`
 
 ## 推荐仓库标签
 

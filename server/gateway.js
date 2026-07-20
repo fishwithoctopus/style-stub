@@ -6,7 +6,7 @@ const HOST = '127.0.0.1';
 const PORT = Number(process.env.STYLE_STUB_PORT || 47820);
 const ROOT = path.resolve(__dirname, '..');
 const MAX_BODY_BYTES = 14 * 1024 * 1024;
-const APP_VERSION = '0.5.0';
+const APP_VERSION = '0.5.1';
 
 const secrets = { qwen: '', deepseek: '', kimi: '' };
 let persistSecrets = null;

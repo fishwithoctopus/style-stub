@@ -2,6 +2,12 @@
 
 All notable changes to Style Stub are documented here.
 
+## 0.5.1 — Unreleased
+
+- Changed the license for the current source tree and future versions to PolyForm Noncommercial 1.0.0.
+- Clarified that commercial use requires separate written permission from the copyright holder.
+- Preserved the MIT License for the already-published `v0.5.0` tag and Windows release; the change is not retroactive.
+
 ## 0.5.0 — 2026-07-20
 
 - Added the Windows desktop app with transparent ticket-shaped window, tray menu, always-on-top, edge snapping and position memory.

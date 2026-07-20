@@ -31,11 +31,11 @@
 
 它现在已经是一个真正的 Windows 桌面小工具：能置顶、贴边、记住位置，也能藏进系统托盘。个人馆藏只保存在本机；API Key 由 Windows 用户级加密保存，不会进 GitHub。
 
-下一步准备把它以 MIT License 开源，也欢迎大家以后一起补票根、修定义和测试 Prompt。
+现在源码已经公开，后续版本采用 **PolyForm Noncommercial 1.0.0**：欢迎大家在非商业前提下使用、修改、补票根、修定义和测试 Prompt；商业使用需要另外取得书面许可。此前发布的 v0.5.0 仍保留原 MIT License。
 
 ## 标签
 
-#UI设计 #AI编程 #vibecoding #独立开发 #设计工具 #桌面软件 #开源项目 #Prompt #设计灵感 #Windows软件
+#UI设计 #AI编程 #vibecoding #独立开发 #设计工具 #桌面软件 #源码开放 #Prompt #设计灵感 #Windows软件
 
 ## 配图顺序
 
@@ -43,4 +43,4 @@
 2. `02.png`：图鉴与完整 Prompt
 3. `03.png`：Style Lab
 4. `04.png`：个人风格提取
-5. `05.png`：桌面能力、隐私与开源
+5. `05.png`：桌面能力、隐私与非商业源码许可

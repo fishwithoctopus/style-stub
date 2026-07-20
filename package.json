@@ -1,9 +1,9 @@
 {
   "name": "style-stub",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "main": "desktop/main.js",
   "private": true,
-  "author": "Style Stub contributors",
+  "author": "fishwithoctopus",
   "description": "A tactile visual-style archive and prompt laboratory.",
   "keywords": [
     "design-systems",
@@ -24,7 +24,7 @@
   "engines": {
     "node": ">=20"
   },
-  "license": "MIT",
+  "license": "PolyForm-Noncommercial-1.0.0",
   "devDependencies": {
     "electron": "43.1.1",
     "electron-builder": "26.15.3"
