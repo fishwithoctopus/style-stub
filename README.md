@@ -84,10 +84,10 @@ docs/               产品、架构、AI 与许可说明
 
 ## License
 
-当前 `main` 分支及后续版本采用 [PolyForm Noncommercial License 1.0.0](LICENSE)，版权所有 © 2026 `fishwithoctopus`。
+本项目采用分层许可：
 
-- 允许符合许可证条款的个人学习、研究、非商业使用、修改与再分发。
-- 商业使用、收费服务、付费客户项目或其他预期商业用途不在公共许可证授权范围内；如有需要，须另行取得版权所有者的书面许可。
-- 这是一项源码公开的非商业许可证，不是 OSI 定义下的开源许可证。
+- **软件与视觉资产：** 当前 `main` 分支及后续版本采用 [PolyForm Noncommercial License 1.0.0](LICENSE)，版权所有 © 2026 `fishwithoctopus`。允许符合条款的非商业使用、修改与再分发；应用代码、界面、CSS 样张或桌面程序的商业使用须另行取得书面许可。
+- **内置 Prompt：** [`data/styles.js`](data/styles.js) 中 `promptZh` 与 `promptEn` 字段内的原创中英文 Prompt 采用 [CC0 1.0](PROMPT_LICENSE.md)，可以复制、修改、翻译并用于商业或非商业项目，无需强制署名。
+- **用户与 AI 生成的 Prompt：** Style Stub 不主张用户输入或根据用户输入生成的 Prompt 的所有权，也不对其使用或商业化施加额外限制；用户仍需自行确认输入素材权利、适用法律与 AI 提供商条款。
 
-许可变更不追溯：已经发布的 `v0.5.0` 标签与 Windows 便携版继续适用其发布时附带的 MIT License。
+软件许可证是一项源码公开的非商业许可证，不是 OSI 定义下的开源许可证。完整边界见 [Prompt 内容许可](PROMPT_LICENSE.md) 与 [NOTICE](NOTICE.md)。许可变更不追溯：已经发布的 `v0.5.0` 标签与 Windows 便携版继续适用其发布时附带的 MIT License。

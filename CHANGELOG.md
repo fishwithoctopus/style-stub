@@ -6,6 +6,8 @@ All notable changes to Style Stub are documented here.
 
 - Changed the license for the current source tree and future versions to PolyForm Noncommercial 1.0.0.
 - Clarified that commercial use requires separate written permission from the copyright holder.
+- Dedicated the built-in `promptZh` and `promptEn` texts under CC0 1.0 so prompts remain freely usable in commercial and noncommercial projects.
+- Clarified that Style Stub claims no ownership over user-entered or user-generated prompt output and imposes no additional usage restriction on it.
 - Preserved the MIT License for the already-published `v0.5.0` tag and Windows release; the change is not retroactive.
 
 ## 0.5.0 — 2026-07-20

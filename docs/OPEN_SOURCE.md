@@ -8,7 +8,9 @@ Style Stub 以 GitHub 公共仓库发布源代码、原创词条文本、原创 
 
 当前 `main` 分支及后续版本采用 [PolyForm Noncommercial License 1.0.0](../LICENSE)。该许可证允许符合条款的非商业使用、修改与再分发，但不授权商业使用。商业用途必须另行取得版权所有者的书面许可。
 
-因此本项目应描述为“源码公开、限非商业使用”，而不是 OSI 定义下的开源软件。已经发布的 `v0.5.0` 标签与 Windows 便携版仍保留其发布时的 MIT License，许可变更不追溯。
+内置 Prompt 单独开放：[`data/styles.js`](../data/styles.js) 中 `promptZh` 与 `promptEn` 字段内的原创 Prompt 文本采用 [CC0 1.0](../PROMPT_LICENSE.md)，允许自由复制、修改、翻译和商用且不强制署名。Style Stub 对用户自行录入或根据用户输入生成的 Prompt 不主张所有权，也不增加额外使用限制。
+
+因此准确表述是“软件源码公开、限非商业使用；内置 Prompt 可自由使用”。软件部分不是 OSI 定义下的开源软件。已经发布的 `v0.5.0` 标签与 Windows 便携版仍保留其发布时的 MIT License，许可变更不追溯。
 
 第三方名称、商标与平台案例不因此获得授权；它们仅用于识别和设计研究，详见 [NOTICE.md](../NOTICE.md)。未经许可的第三方参考图不随仓库分发。
 
@@ -20,6 +22,7 @@ Style Stub 以 GitHub 公共仓库发布源代码、原创词条文本、原创 
 - [x] Issue 与 Pull Request 模板
 - [x] 忽略本地数据、密钥和构建产物
 - [x] PolyForm Noncommercial 1.0.0 与 npm 许可元数据
+- [x] 内置 Prompt 的 CC0 1.0 例外与用户输出说明
 - [x] Windows 免安装构建
 - [x] 成品截图
 - [x] 项目名：Style Stub / 风格票根

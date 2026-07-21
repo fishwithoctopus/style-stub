@@ -39,7 +39,11 @@ npm run desktop
 
 ## 贡献许可
 
-提交贡献即表示你确认自己有权提供相关内容，并同意该贡献按照项目当前的 [PolyForm Noncommercial License 1.0.0](LICENSE) 公开。该公共许可证不授权商业使用；如涉及其他授权安排，必须在合并前与版权所有者书面确认。
+提交贡献即表示你确认自己有权提供相关内容，并同意：
+
+- 对 `data/styles.js` 中 `promptZh` 与 `promptEn` 字段提交的原创 Prompt 文本按照 [CC0 1.0](PROMPT_LICENSE.md) 提供，可被任何人用于商业或非商业目的；
+- 其他代码、界面、CSS 样张、文档与项目资产按照项目当前的 [PolyForm Noncommercial License 1.0.0](LICENSE) 公开，不授权商业使用；
+- 如贡献中包含第三方内容或需要不同授权，必须在合并前明确说明并取得相应许可。
 
 ## 个人数据与素材
 

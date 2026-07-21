@@ -18,6 +18,7 @@
     "desktop": "electron .",
     "dist:win": "electron-builder --win portable",
     "capture:assets": "electron scripts/capture-assets.js",
+    "capture:xhs": "electron scripts/capture-assets.js --xhs-only",
     "test": "node tests/gateway-persistence.test.js && node tests/window-state.test.js",
     "check": "node --check app.js && node --check data/styles.js && node --check server/gateway.js && node --check desktop/main.js && node --check desktop/preload.js && node --check scripts/capture-assets.js"
   },
@@ -42,6 +43,7 @@
       "desktop/**/*",
       "build/**/*",
       "LICENSE",
+      "PROMPT_LICENSE.md",
       "package.json"
     ],
     "win": {

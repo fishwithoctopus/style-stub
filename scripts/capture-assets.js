@@ -4,10 +4,13 @@ const os = require('os');
 const { app, BrowserWindow } = require('electron');
 const { startGateway } = require('../server/gateway');
 
+app.disableHardwareAcceleration();
+
 const ROOT = path.resolve(__dirname, '..');
 const APP_ASSETS = path.join(ROOT, 'docs', 'assets');
 const XHS_ASSETS = path.join(ROOT, 'marketing', 'xiaohongshu');
 const CAPTURE_PROFILE = path.join(os.tmpdir(), 'style-stub-public-capture');
+const XHS_ONLY = process.argv.includes('--xhs-only');
 
 function demoCover() {
   const png = fs.readFileSync(path.join(APP_ASSETS, 'catalog.png'));
@@ -127,7 +130,7 @@ app.whenReady().then(async () => {
   let appCaptureWindow;
   try {
     server = await startGateway({ port: 0, quiet: true });
-    appCaptureWindow = await captureAppScreens(server.address().port);
+    if (!XHS_ONLY) appCaptureWindow = await captureAppScreens(server.address().port);
     await captureXhsCards(server.address().port);
     console.log('[Style Stub] public screenshots generated');
   } finally {
